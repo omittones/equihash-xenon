@@ -11,8 +11,6 @@ section '.text' executable align 64
 include "proc_ehprepare_avx2.asm"
 include "proc_ehsolver_avx2.asm"
 
-/*
 section '.data' writeable align 64
 include "data_blake2b.asm"
 testinput file "t2.bin"
-*/

@@ -85,7 +85,7 @@ lea rcx, [rsp+0x80]
 call [QueryPerformanceCounter]
 mov rcx, [hMem1]
 xor edx, edx
-call _ProcEhSolver	;Warm up run
+call _ProcEhSolverAVX2	;Warm up run
 mov ebx, eax
 lea rcx, [rsp+0x90]
 call [QueryPerformanceCounter]
@@ -113,7 +113,7 @@ call [QueryPerformanceCounter]
 
 mov rcx, [hMem1]
 mov edx, [rsp+0x50]
-call _ProcEhSolver
+call _ProcEhSolverAVX2
 add [rsp+0x54], eax
 mov ebx, eax
 

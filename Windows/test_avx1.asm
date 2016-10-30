@@ -103,7 +103,7 @@ call _ProcEhPrepareAVX1
 mov rcx, [hMem1]
 mov edx, dword [t1+136]
 	;add edx, 17
-call _ProcEhSolver
+call _ProcEhSolverAVX1
 mov ebx, eax
 
 lea rcx, [rsp+0x90]
