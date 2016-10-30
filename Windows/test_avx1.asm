@@ -98,12 +98,12 @@ mov [rsp+0x88], rax
 
 mov rcx, [hMem1]
 mov edx, t1
-call _ProcEhPrepareAVX1
+call EhPrepare_AVX1
 
 mov rcx, [hMem1]
 mov edx, dword [t1+136]
 	;add edx, 17
-call _ProcEhSolverAVX1
+call EhSolver_AVX1
 mov ebx, eax
 
 lea rcx, [rsp+0x90]

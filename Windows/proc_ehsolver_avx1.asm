@@ -18,7 +18,7 @@ add rcx, 8
 mov [rbp+EH.debugptr], rcx
 }
 
-_ProcEhSolverAVX1:
+EhSolver_AVX1:
 push r15
 push r14
 push r13

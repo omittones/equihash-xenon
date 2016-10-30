@@ -1,13 +1,13 @@
-format elf64
-public _ProcEhPrepareAVX1
-public _ProcEhSolverAVX1
+format MS64 COFF
+public EhPrepare_AVX1
+public EhSolver_AVX1
 
 include "struct.inc"
 include "params.inc"
 include "struct_eh.inc"
 include "macro_eh.asm"
 
-section '.text' executable align 64
+section '.text' align 64
 include "proc_ehprepare_avx1.asm"
 include "proc_ehsolver_avx1.asm"
 

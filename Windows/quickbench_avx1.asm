@@ -79,13 +79,13 @@ call [printf]
 
 mov rcx, [hMem1]
 mov edx, t1
-call _ProcEhPrepareAVX1
+call EhPrepare_AVX1
 
 lea rcx, [rsp+0x80]
 call [QueryPerformanceCounter]
 mov rcx, [hMem1]
 xor edx, edx
-call _ProcEhSolverAVX1	;Warm up run
+call EhSolver_AVX1	;Warm up run
 mov ebx, eax
 lea rcx, [rsp+0x90]
 call [QueryPerformanceCounter]
@@ -113,7 +113,7 @@ call [QueryPerformanceCounter]
 
 mov rcx, [hMem1]
 mov edx, [rsp+0x50]
-call _ProcEhSolverAVX1
+call EhSolver_AVX1
 add [rsp+0x54], eax
 mov ebx, eax
 
