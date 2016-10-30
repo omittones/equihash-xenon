@@ -1,4 +1,4 @@
-_ProcEhPrepare:
+_ProcEhPrepareAVX1:
 sub rsp, 0x1f8
 vmovdqa [rsp+0x180], xmm6
 vmovdqa [rsp+0x190], xmm7

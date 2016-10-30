@@ -98,7 +98,7 @@ mov [rsp+0x88], rax
 
 mov rcx, [hMem1]
 mov edx, t1
-call _ProcEhPrepare
+call _ProcEhPrepareAVX2
 
 mov rcx, [hMem1]
 mov edx, dword [t1+136]

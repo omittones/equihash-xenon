@@ -79,7 +79,7 @@ call [printf]
 
 mov rcx, [hMem1]
 mov edx, t1
-call _ProcEhPrepare
+call _ProcEhPrepareAVX1
 
 lea rcx, [rsp+0x80]
 call [QueryPerformanceCounter]
