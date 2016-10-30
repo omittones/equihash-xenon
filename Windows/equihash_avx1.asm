@@ -7,7 +7,7 @@ include "params.inc"
 include "struct_eh.inc"
 include "macro_eh.asm"
 
-section '.text1' align 64
+section '.text1' executable align 64
 include "proc_ehprepare_avx1.asm"
 include "proc_ehsolver_avx1.asm"
 
